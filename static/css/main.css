@@ -1,0 +1,149 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 0 1px 8px #ddd; */
+    font-family: arial, sans-serif;
+    background-color: beige;
+}
+
+header img{
+    height: 100px;
+    margin-right: 10px;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #555;
+    transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+    color: #b2dfdb;
+}
+
+header button {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    color: #555;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+#logo {
+    height: 40px;
+    padding-left: 5px;
+}
+
+
+body {
+    background-color: white;
+}
+
+.content {
+    max-width: 90%;
+    margin-left: 5%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: azure;
+}
+
+.content-block {
+    max-width: 90%;
+    margin-left: 5%;
+    padding-top: 20px;
+    background-color: azure;
+}
+
+.content-block h3 {
+    width: 98%;
+    margin: 1%;
+}
+
+.label {
+    display: flex;
+    float: left;
+}
+
+.datafield {
+    display: flex;
+}
+
+.error {
+    color: red;
+}
+
+.flash {
+    color: yellow;
+}
+
+.member-list {
+    text-align: center;
+    width: 100%;
+}
+
+.member-view {
+    text-align: left;
+    width: 98%;
+    margin: 1%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 98%;
+    margin: 1%;
+    margin-bottom: 1%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+p {
+    padding: 2px;
+}
+
+.row {
+    display: flex;
+    width: 80%;
+  }
+  
+.column {
+    flex: 50%;
+    padding: 2px 5px;
+}
+
+.right {
+    text-align: right;
+}
+
+.right-col {
+    padding: 25px
+}

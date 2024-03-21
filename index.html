@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <title>Form CSS Tester</title>
+        <link rel="stylesheet" href="./static/css/main2.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <img id="logo" src="./static/images/NY CREATES_logo_580x80.png">
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href='/member/'>Member List</a></li>
+                    </ul>        
+                </nav>   
+            </div>
+            
+            <div class="header-right">
+                <nav >
+                    <ul>
+                        <li ><form action='/user/logout' method='POST'>
+                            <input type='hidden' name='csrf_token' value='{{.CSRFToken}}'>
+                            <button>Logout</button>
+                        </form></li>
+                         
+                    </ul>        
+                </nav>  
+            </div>
+        </header> 
+        <main>
+            <div class="content-block">
+                <div class="content-block">
+                    <div class="row">
+                        <div class="col-25"></div>
+                        <div class="col-25">
+                            <h2>Lou Garwood</h2>
+                            <p>louis.garrood@gmail.com</p>
+                            <p>518-455-5555</p>
+                            <p>aadr1 Troy, NY 1221222</p>
+                        </div>
+                        <div class="col-25 top-pad">
+                            <div class="row">
+                                <div class="col-25-right">Joint Member:</div>
+                                <div class="col-25">Annie Garwood</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25-right">Region:</div>
+                                <div class="col-25">1</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25-right">Joined:</div>
+                                <div class="col-25">1/1/2018</div>
+                            </div>
+                        </div>
+                        <div class="col-25"></div>
+                    </div> 
+                </div>
+                <h3>Membership History<button><a href="/membership/create?memberID={{.Member.ID}}">Add</a></button> </h3>
+                    <table>
+                        <tr>
+                            <td>Year</td>
+                            <td>Type</td>
+                            <td>Amount</td>
+                            <td>Printed Roster Amount</td>
+                            <td>Health and Genetics Amount</td>
+                            <td>Rescue Amount</td>
+                            <td>Total Amount</td>
+                        </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>Single</td>
+                                <td>$25</td>
+                                <td>$5</td>
+                                <td>$0</td>
+                                <td>$0</td>
+                                <td>$30</td>
+                            </tr>
+                    </table>
+            </div>
+            
+            
+        </main>
+        <script src="./static/js/main.js" type="text/javascript"></script>
+    </body>
+</html>
